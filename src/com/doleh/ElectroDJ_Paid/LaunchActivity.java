@@ -22,6 +22,7 @@ public class LaunchActivity extends Activity
                 Intent i = new Intent(LaunchActivity.this, MainActivity.class);
                 i.putExtra(MainActivity.SHOW_ADS, false);
                 i.putExtra(MainActivity.APP_PNAME, getPackageName());
+                i.putExtra(MainActivity.APP_TITLE, getString(R.string.app_name));
                 startActivity(i);
             }
         }, SPLASH_TIMEOUT);
