@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import com.doleh.Jukebox.Config;
 import com.doleh.Jukebox.MainActivity;
 
 public class LaunchActivity extends Activity
@@ -20,9 +21,9 @@ public class LaunchActivity extends Activity
             @Override
             public void run() {
                 Intent i = new Intent(LaunchActivity.this, MainActivity.class);
-                i.putExtra(MainActivity.SHOW_ADS, false);
-                i.putExtra(MainActivity.APP_PNAME, getPackageName());
-                i.putExtra(MainActivity.APP_TITLE, getString(R.string.app_name));
+                i.putExtra(Config.SHOULD_SHOW_ADS_KEY, false);
+                i.putExtra(Config.APP_PNAME_KEY, getPackageName());
+                i.putExtra(Config.APP_TITLE_KEY, getString(R.string.app_name));
                 startActivity(i);
             }
         }, SPLASH_TIMEOUT);
