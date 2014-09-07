@@ -24,6 +24,7 @@ public class LaunchActivity extends Activity
                 i.putExtra(Config.SHOULD_SHOW_ADS_KEY, false);
                 i.putExtra(Config.APP_PNAME_KEY, getPackageName());
                 i.putExtra(Config.APP_TITLE_KEY, getString(R.string.app_name));
+                i.putExtra(Config.MAX_MESSAGE_COUNT_KEY, 10);
                 startActivity(i);
             }
         }, SPLASH_TIMEOUT);
