@@ -34,6 +34,9 @@
         <activity android:name="com.doleh.Jukebox.MainActivity" android:launchMode="singleInstance"
                   android:configChanges="keyboardHidden|orientation|screenSize"/>
 
+        <activity android:name="com.doleh.Jukebox.CrashActivity" android:launchMode="singleInstance"
+                  android:configChanges="keyboardHidden|orientation|screenSize"/>
+
         <activity android:name="com.google.android.gms.ads.AdActivity"
                   android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
     </application>
