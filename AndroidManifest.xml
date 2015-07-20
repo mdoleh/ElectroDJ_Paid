@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.doleh.ElectroDJ_Paid"
-          android:versionCode="7"
-          android:versionName="1.31">
+          package="com.doleh.ElectroDJ_Free"
+          android:versionCode="10"
+          android:versionName="1.35">
 
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
     <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
@@ -20,7 +20,7 @@
         <meta-data android:name="com.google.android.gms.version"
                    android:value="@integer/google_play_services_version" />
         <activity
-                android:name=".LaunchActivity"
+                android:name="com.doleh.ElectroDJ_Paid.LaunchActivity"
                 android:label="@string/app_name"
                 android:noHistory="true"
                 android:launchMode="singleInstance"
@@ -37,7 +37,7 @@
         <activity android:name="com.doleh.Jukebox.CrashActivity" android:launchMode="singleInstance"
                   android:configChanges="keyboardHidden|orientation|screenSize"/>
 
-        <activity android:name="com.google.android.gms.ads.AdActivity"
-                  android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+        <!--<activity android:name="com.google.android.gms.ads.AdActivity"-->
+                  <!--android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>-->
     </application>
 </manifest>
